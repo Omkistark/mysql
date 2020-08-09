@@ -8,7 +8,7 @@ date
 datetime  
 char  
 varchar(limit)  
-
+  
 ### 1>	CREATE:  
 CREATE DATABASE database_name;  
 CREATE TABLE table_name(column1 datatype1 constraints, column2 datatype2 constraints ...);  
@@ -17,20 +17,20 @@ Constraints:
 -PRIMARY KEY  
 -FOREIGN KEY  
 -NOT NULL  
--CHECK
--DEFAULT
--UNIQUE
-
+-CHECK  
+-DEFAULT  
+-UNIQUE  
+  
 ### 2> DROP:  
 DROP DATABASE database_name;  
 DROP TABLE table_name;  
-
+  
 ### 3>ALTER:  
 ADD column/columns:  
 ALTER TABLE table_name ADD column_name datatype;  
 ALTER TABLE table_name ADD column_name1 datatype1 constraints, ADD column_name2 datatype2 constraints... ;  
 
-add constraints:  
+Add constraints:  
 PRIMARY KEY:  
 ALTER TABLE table_name ADD CONSTRAINT indexname PRIMARY KEY (columnn_name1,columnn_name2);    
 FOREIGN KEY:  
@@ -46,7 +46,7 @@ ALTER TABLE table_name ADD CONSTRAINT indexname UNIQUE (column_name1,column_name
 DEFAULT:  
 ALTER TABLE tablename ALTER column_name SET DEFAULT value;  
 
-remove constraints:  
+Remove constraints:  
 PRIMARY KEY:  
 ALTER TABLE table_name DROP PRIMARY KEY;  
 FOREIGN KEY:  
@@ -65,6 +65,7 @@ Modify Definition:
 ALTER TABLE table_name MODIFY column_name datatype CONSTRAINTS [ FIRST / AFTER column_name];  
 
 Rename:  
-ALTER TABLE old_table_name RENAME new_table_name;
+ALTER TABLE old_table_name RENAME new_table_name;  
+  
 ### 4>TRUNCATE:  
 TRUNCATE TABLE table_name;  
