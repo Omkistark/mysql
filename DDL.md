@@ -12,8 +12,10 @@ varchar(limit)
 ### 1>	CREATE:  
 CREATE DATABASE database_name;  
 CREATE TABLE table_name(column1 datatype1 constraints, column2 datatype2 constraints ...);  
-duplicate a table:CREATE TABLE newtablename AS SELECT * FROM original_table;  
-Constraints:  
+Duplicate a table:  CREATE TABLE newtablename AS SELECT * FROM original_table;  
+Create a new User:  CREATE USER 'username'@'localhost' IDENTIFIED BY 'password';  
+  
+Constraints for a database:  
 -PRIMARY KEY  
 -FOREIGN KEY  
 -NOT NULL  
