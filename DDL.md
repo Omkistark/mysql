@@ -14,7 +14,10 @@ CREATE DATABASE database_name;
 CREATE TABLE table_name(column1 datatype1 constraints, column2 datatype2 constraints ...);  
 Duplicate a table:  CREATE TABLE newtablename AS SELECT * FROM original_table;  
 Create a new User:  CREATE USER 'username'@'localhost' IDENTIFIED BY 'password';  
-  
+Create index:  CREATE INDEX indexname on tablename(columnname);  
+*Use {SHOW INDEX FROM tablename} -to check indexnames!*  
+Create View: CREATE [FORCE/NOFORCE(default)] VIEW viewname [alias] AS subquery [With CHECK OPTION [CONSTRAINT constraints]] [WITH READ INLY [CONSTRAINT constraints]];    
+*Subquery maybe select*  
 Constraints for a database:  
 -PRIMARY KEY  
 -FOREIGN KEY  
