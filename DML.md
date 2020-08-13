@@ -46,24 +46,24 @@ FROM ((table-name1 INNER JOIN table-name2 ON condition1)
 INNER JOIN table-name3 ON condition2);  
 
 #### 1c>Left Outer Join (Gives matching rows and non matching rows from on leftside) 
-SELECT column_name1,column_name2 ... FROM table_name1 LEFT JOIN table_name2 ON condition;  
+SELECT column_name1,column_name2, ... FROM table_name1 LEFT JOIN table_name2 ON condition;  
 
 #### 1d>Right Outer Join (Gives matching rows and non matching rows from on rightside)  
-SELECT column_name1,column_name2 ... FROM table_name1 RIGHT JOIN table_name2 ON condition;  
+SELECT column_name1,column_name2, ... FROM table_name1 RIGHT JOIN table_name2 ON condition;  
 
 #### 1e>Self Join (Useful in case of unary relation)  
-SELECT obj1.column_name1 AS Alias1,  
-       obj2.column_name2 As Alias2  
+SELECT obj1.column_name1 [AS Alias1],  
+       obj2.column_name2 [As Alias2]  
 FROM table_name1 obj1 INNER/LEFT/RIGHT JOIN table_name1 obj2 ON condition;   
   
 
 ### 2>INSERT INTO  
 Not all column values :  
-INSERT INTO table_name (column_name_1,column_name_2,..)
-VALUES (value-corresponding-to-col-1,value-corresponding-to-col-2,...);
+INSERT INTO table_name (column_name_1,column_name_2, ...)
+VALUES (value-corresponding-to-col-1,value-corresponding-to-col-2, ...);
   
 All column values:  
-INSERT INTO table_name VALUES (value1,value2,...);  
+INSERT INTO table_name VALUES (value1,value2, ...);  
 
 ### 3>UPDATE  
 UPDATE table_name SET column_name [WHERE condition];  
