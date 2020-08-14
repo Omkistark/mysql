@@ -41,7 +41,7 @@ condition denotes any expression like comparison.
 SELECT colname1,colname2 ... FROM tablename1 INNER JOIN tablename2 ON condition;  
 SELECT colname1,colname2 ... FROM tablename1, tablename2 WHERE condition;  
   
-SELECT column1,column2.column3,... 
+SELECT column1,column2,column3,... 
 FROM ((table-name1 INNER JOIN table-name2 ON condition1)
 INNER JOIN table-name3 ON condition2);  
 
