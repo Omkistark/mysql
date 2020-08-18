@@ -1,11 +1,17 @@
 ## PL in SQL  
-** Stored Procedure					** Function  
-* call procedurename  			* functionname(arglist)  
-* returns 0 or more values	* returns only one value  
-* Precompiled								* Not precompiled  
-*	Not usable in query				* Usable in query  
-* Out parameter							* Can't use out parameter  
-
+* * * Stored Procedure ***  
+call procedurename  
+returns 0 or more values   
+Precompiled  						 
+Not usable in query  
+Out parameter  
+* * * Fuction    
+functionname(arglist)  
+returns only one value  
+Not precompiled  
+Usable in query  
+Can't use out parameter  
+  
 ####  Procedures:  
 DELIMITER //
 CREATE PROCEDURE procedure_name(IN argument datatype,..,OUT parameter_name datatype)
