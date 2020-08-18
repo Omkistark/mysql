@@ -51,3 +51,13 @@ SET assignment
 END WHILE  
 
 #### Functions:  
+DELIMITER //
+CREATE FUNCTION functionname (parameter1 datatype1,...) returns datatype DETERMINISTIC  
+BEGIN  
+DECLARE ..  
+-- Loops,cnditions blah blah  
+-- Select into statements  
+RETURN datatype;  
+END//  
+
+SELECT functionname(arglist) FROM tablename;  
